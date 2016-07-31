@@ -1,32 +1,36 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Streetfighter</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-  <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script src="js/app.js"></script>
+    <meta charset="UTF-8">
+    <title>Streetfighter</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
-
 <body>
+    <div class="main">
+        <div class="ryu">
+            <div class="ryu-still"></div>
+            <div class="ryu-ready"></div>
+            <div class="ryu-throwing"></div>
+            <div class="ryu-cool"></div>
+        </div>
+        <!--only 2 imgs appear-->
 
-  <div class="main">
-<div class="cool-text"><p>Hit 'x' to make him look cool.</p>
-<p>Move your mouse down to make him throw a hadouken!</p></div>
-    <div class="ryu">
-    	<div class="ryu-still"></div>
-    	<div class="ryu-ready"></div>
-    	<div class="ryu-throwing"></div> 
-      <div class="ryu-cool"></div> 
+        <div class="hadouken">
+        </div>
+        <div class="text-content">
+            <p class="x-text">Hit 'x' to make him look cool.</p>
+            <p class="hadouken-text">Click on Ryu to make him throw a hadouken!</p>
+            <!--Fix this div with the text-->
+        </div>
     </div>
 
-    <div class="hadouken">
-      </div>
-
-  </div>
-  <audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
+    <audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
 
 </body>
+
 </html>
