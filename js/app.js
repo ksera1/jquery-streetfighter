@@ -12,6 +12,10 @@ $(document).ready(function() {
             //where did playHadouken() function come from?
             playHadouken();
             $('.ryu-ready').hide();
+            $('.ryu-still').hide();
+            $('.ryu-cool').hide();
+
+            $('.hadouken').hide();
             $('.ryu-throwing').show();
             $('.hadouken').finish().show().animate({ 'left': '1020px' },
                 500,
@@ -24,7 +28,10 @@ $(document).ready(function() {
             // animate it to the right of the screen
         })
         .mouseup(function() {
+            $('.ryu-cool').hide();
+            $('.ryu-still').hide();
             $('.ryu-throwing').hide();
+            $('.hadouken').hide();
             $('.ryu-ready').show();
         });
 });
@@ -32,15 +39,23 @@ $(document).ready(function() {
 $(document).keydown(function(e) {
     if (e.keyCode == 88) {
         $('.ryu-still').hide();
+        $('.ryu-ready').hide();
+        $('.ryu-throwing').hide();
+        $('.hadouken').hide();
+
+
         $('.ryu-cool').show();
     }
 }).keyup(function(e) {
     if (e.keyCode == 88) {
         $('.ryu-cool').hide();
+        $('.ryu-ready').hide();
+        $('.ryu-throwing').hide();
+        $('.hadouken').hide();
         $('.ryu-still').show();
     }
-//when mouse is inside .ryu div and 'x' is
-// pressed addt'l div appears bottom of page.
+    //when mouse is inside .ryu div and 'x' is
+    // pressed addt'l div appears bottom of page.
     // .off(){
     //     if (e.keyCode == 88) {
     //     $('.ryu-cool').show();
